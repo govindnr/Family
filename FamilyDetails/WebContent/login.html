@@ -1,0 +1,64 @@
+<html lang="en">
+<style>
+html,
+body {
+  margin: 0;
+  padding:0;
+  height: 100%;
+  position: relative;
+}
+body
+{
+    background-color : #f09774;
+}
+h1
+{
+    color : #000000;
+    text-align : center;
+    font-family: "SIMPSON";
+}
+form
+{
+    width: 300px;
+    margin: 0 auto;
+}
+</style>
+</head>
+<title></title>
+<link rel="stylesheet" href="css">
+<script src="node_modules/jquery.js"></script>
+<script data-main="backbonejs/main.js" src="node_modules/requirejs/require.js"></script>
+<script  src="js/loginform.js">
+</script>
+<body class="loginbody">
+<form id='loginpage'>
+  <table>
+   <tr>
+      <td><font face="verdana" size="2px">User Name:</font></td>
+      <td><input type="text" id="userName"></td>
+   </tr>
+   <tr>
+      <td><font face="verdana" size="2px">Password:</font></td>
+      <td><input type="text" id="password"></td>
+   </tr>
+   <tr>
+   <tr>
+      <td><font face="verdana" size="2px">Family:</font></td>
+      <td> <select>
+					  <option value="1">family1</option>
+					  <option value="2">family2</option>
+					  <option value="3">family3</option>
+					  <option value="4">family4</option>
+					  <option value="5">family5</option>
+					  <option value="6">family6</option>
+		  </select> 
+	  </td>
+   </tr><br>
+  </table>
+      <input type="submit" value="LOGIN" id="existinguser" href="welcomeuser">
+      <input type="submit" value="New User" id="newuser">
+</form>
+<form id='newuserpage' style="display:none">
+<form id='userdetailspage' style="display:none">
+</body>
+</html>
